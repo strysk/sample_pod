@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B9E5B3B52991BA130086EBE3 /* sample_pod.docc in Sources */ = {isa = PBXBuildFile; fileRef = B9E5B3B42991BA130086EBE3 /* sample_pod.docc */; };
-		B9E5B3BB2991BA130086EBE3 /* sample_pod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E5B3B02991BA130086EBE3 /* sample_pod.framework */; };
-		B9E5B3C02991BA130086EBE3 /* sample_podTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E5B3BF2991BA130086EBE3 /* sample_podTests.swift */; };
-		B9E5B3C12991BA130086EBE3 /* sample_pod.h in Headers */ = {isa = PBXBuildFile; fileRef = B9E5B3B32991BA130086EBE3 /* sample_pod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E5B3B52991BA130086EBE3 /* SampleLib.docc in Sources */ = {isa = PBXBuildFile; fileRef = B9E5B3B42991BA130086EBE3 /* SampleLib.docc */; };
+		B9E5B3BB2991BA130086EBE3 /* SampleLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E5B3B02991BA130086EBE3 /* SampleLib.framework */; };
+		B9E5B3C02991BA130086EBE3 /* SampleLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E5B3BF2991BA130086EBE3 /* SampleLibTests.swift */; };
+		B9E5B3C12991BA130086EBE3 /* SampleLib.h in Headers */ = {isa = PBXBuildFile; fileRef = B9E5B3B32991BA130086EBE3 /* SampleLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E5B3CB2991BDD90086EBE3 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E5B3CA2991BDD90086EBE3 /* Sample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B9E5B3B02991BA130086EBE3 /* sample_pod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = sample_pod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9E5B3B32991BA130086EBE3 /* sample_pod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sample_pod.h; sourceTree = "<group>"; };
-		B9E5B3B42991BA130086EBE3 /* sample_pod.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = sample_pod.docc; sourceTree = "<group>"; };
-		B9E5B3BA2991BA130086EBE3 /* sample_podTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sample_podTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9E5B3BF2991BA130086EBE3 /* sample_podTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_podTests.swift; sourceTree = "<group>"; };
+		B9E5B3B02991BA130086EBE3 /* SampleLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SampleLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E5B3B32991BA130086EBE3 /* SampleLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleLib.h; sourceTree = "<group>"; };
+		B9E5B3B42991BA130086EBE3 /* SampleLib.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SampleLib.docc; sourceTree = "<group>"; };
+		B9E5B3BA2991BA130086EBE3 /* SampleLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9E5B3BF2991BA130086EBE3 /* SampleLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLibTests.swift; sourceTree = "<group>"; };
+		B9E5B3CA2991BDD90086EBE3 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9E5B3BB2991BA130086EBE3 /* sample_pod.framework in Frameworks */,
+				B9E5B3BB2991BA130086EBE3 /* SampleLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +55,8 @@
 		B9E5B3A62991BA130086EBE3 = {
 			isa = PBXGroup;
 			children = (
-				B9E5B3B22991BA130086EBE3 /* sample_pod */,
-				B9E5B3BE2991BA130086EBE3 /* sample_podTests */,
+				B9E5B3B22991BA130086EBE3 /* SampleLib */,
+				B9E5B3BE2991BA130086EBE3 /* SampleLibTests */,
 				B9E5B3B12991BA130086EBE3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,27 +64,28 @@
 		B9E5B3B12991BA130086EBE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9E5B3B02991BA130086EBE3 /* sample_pod.framework */,
-				B9E5B3BA2991BA130086EBE3 /* sample_podTests.xctest */,
+				B9E5B3B02991BA130086EBE3 /* SampleLib.framework */,
+				B9E5B3BA2991BA130086EBE3 /* SampleLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B9E5B3B22991BA130086EBE3 /* sample_pod */ = {
+		B9E5B3B22991BA130086EBE3 /* SampleLib */ = {
 			isa = PBXGroup;
 			children = (
-				B9E5B3B32991BA130086EBE3 /* sample_pod.h */,
-				B9E5B3B42991BA130086EBE3 /* sample_pod.docc */,
+				B9E5B3B32991BA130086EBE3 /* SampleLib.h */,
+				B9E5B3B42991BA130086EBE3 /* SampleLib.docc */,
+				B9E5B3CA2991BDD90086EBE3 /* Sample.swift */,
 			);
-			path = sample_pod;
+			path = SampleLib;
 			sourceTree = "<group>";
 		};
-		B9E5B3BE2991BA130086EBE3 /* sample_podTests */ = {
+		B9E5B3BE2991BA130086EBE3 /* SampleLibTests */ = {
 			isa = PBXGroup;
 			children = (
-				B9E5B3BF2991BA130086EBE3 /* sample_podTests.swift */,
+				B9E5B3BF2991BA130086EBE3 /* SampleLibTests.swift */,
 			);
-			path = sample_podTests;
+			path = SampleLibTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,16 +95,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9E5B3C12991BA130086EBE3 /* sample_pod.h in Headers */,
+				B9E5B3C12991BA130086EBE3 /* SampleLib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B9E5B3AF2991BA130086EBE3 /* sample_pod */ = {
+		B9E5B3AF2991BA130086EBE3 /* SampleLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9E5B3C42991BA130086EBE3 /* Build configuration list for PBXNativeTarget "sample_pod" */;
+			buildConfigurationList = B9E5B3C42991BA130086EBE3 /* Build configuration list for PBXNativeTarget "SampleLib" */;
 			buildPhases = (
 				B9E5B3AB2991BA130086EBE3 /* Headers */,
 				B9E5B3AC2991BA130086EBE3 /* Sources */,
@@ -112,14 +115,14 @@
 			);
 			dependencies = (
 			);
-			name = sample_pod;
+			name = SampleLib;
 			productName = sample_pod;
-			productReference = B9E5B3B02991BA130086EBE3 /* sample_pod.framework */;
+			productReference = B9E5B3B02991BA130086EBE3 /* SampleLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B9E5B3B92991BA130086EBE3 /* sample_podTests */ = {
+		B9E5B3B92991BA130086EBE3 /* SampleLibTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9E5B3C72991BA130086EBE3 /* Build configuration list for PBXNativeTarget "sample_podTests" */;
+			buildConfigurationList = B9E5B3C72991BA130086EBE3 /* Build configuration list for PBXNativeTarget "SampleLibTests" */;
 			buildPhases = (
 				B9E5B3B62991BA130086EBE3 /* Sources */,
 				B9E5B3B72991BA130086EBE3 /* Frameworks */,
@@ -130,9 +133,9 @@
 			dependencies = (
 				B9E5B3BD2991BA130086EBE3 /* PBXTargetDependency */,
 			);
-			name = sample_podTests;
+			name = SampleLibTests;
 			productName = sample_podTests;
-			productReference = B9E5B3BA2991BA130086EBE3 /* sample_podTests.xctest */;
+			productReference = B9E5B3BA2991BA130086EBE3 /* SampleLibTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -153,7 +156,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B9E5B3AA2991BA130086EBE3 /* Build configuration list for PBXProject "sample_pod" */;
+			buildConfigurationList = B9E5B3AA2991BA130086EBE3 /* Build configuration list for PBXProject "SampleLib" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,8 +169,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9E5B3AF2991BA130086EBE3 /* sample_pod */,
-				B9E5B3B92991BA130086EBE3 /* sample_podTests */,
+				B9E5B3AF2991BA130086EBE3 /* SampleLib */,
+				B9E5B3B92991BA130086EBE3 /* SampleLibTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,7 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9E5B3B52991BA130086EBE3 /* sample_pod.docc in Sources */,
+				B9E5B3B52991BA130086EBE3 /* SampleLib.docc in Sources */,
+				B9E5B3CB2991BDD90086EBE3 /* Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9E5B3C02991BA130086EBE3 /* sample_podTests.swift in Sources */,
+				B9E5B3C02991BA130086EBE3 /* SampleLibTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +215,7 @@
 /* Begin PBXTargetDependency section */
 		B9E5B3BD2991BA130086EBE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9E5B3AF2991BA130086EBE3 /* sample_pod */;
+			target = B9E5B3AF2991BA130086EBE3 /* SampleLib */;
 			targetProxy = B9E5B3BC2991BA130086EBE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -394,6 +398,7 @@
 		B9E5B3C82991BA130086EBE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -409,6 +414,7 @@
 		B9E5B3C92991BA130086EBE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +430,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9E5B3AA2991BA130086EBE3 /* Build configuration list for PBXProject "sample_pod" */ = {
+		B9E5B3AA2991BA130086EBE3 /* Build configuration list for PBXProject "SampleLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9E5B3C22991BA130086EBE3 /* Debug */,
@@ -433,7 +439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9E5B3C42991BA130086EBE3 /* Build configuration list for PBXNativeTarget "sample_pod" */ = {
+		B9E5B3C42991BA130086EBE3 /* Build configuration list for PBXNativeTarget "SampleLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9E5B3C52991BA130086EBE3 /* Debug */,
@@ -442,7 +448,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9E5B3C72991BA130086EBE3 /* Build configuration list for PBXNativeTarget "sample_podTests" */ = {
+		B9E5B3C72991BA130086EBE3 /* Build configuration list for PBXNativeTarget "SampleLibTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9E5B3C82991BA130086EBE3 /* Debug */,
